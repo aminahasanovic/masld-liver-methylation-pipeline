@@ -1,0 +1,28 @@
+figure,file_stem,main_message,thesis_figure,source_script,source_output_file
+F01,F01_cohort_composition,Study membership and disease progression are not perfectly balanced.,3.1,epigenetic_age/01_epi_age_calculation.R,cohort_overview_faceted.png
+F06,F06_classifier_model_comparison,Train/test performance is optimistic compared with LOSO validation.,5.4,classifier/scripts/17_compare_classifier_models.R,model_comparison_three_classifiers_metrics.png
+F06A,F06A_classifier_model_comparison_4class,Focused 4-class model comparison for explaining train/test versus LOSO performance.,,classifier/scripts/17_compare_classifier_models.R,model_comparison_three_classifiers_metrics.png
+F07,F07_loso_fold_performance,LOSO performance depends strongly on the held-out study.,7.6,classifier/scripts/17_compare_classifier_models.R,model_comparison_loso_fold_metrics_three_classifiers.png
+F08,F08_elastic_net_loso_confusion_matrices,Elastic Net LOSO errors reveal which classes are confused.,5.5,classifier/scripts/08_plot_elastic_net_results.R,elastic_net_loso_confusion_heatmaps.png
+F09,F09_interpretation_top15_beta_by_disease_group,Candidates prioritized for biological interpretation show beta-value distributions across disease groups.,,classifier/scripts/28_build_final_candidate_thesis_outputs.R,F09_interpretation_top15_beta_by_disease_group.png
+F09A,F09A_top6_cpg_beta_by_4class,Top CpG candidates show methylation shifts across the 4-class classifier outcome.,,classifier/scripts/28_build_final_candidate_thesis_outputs.R,
+F10,F10_interpretation_top15_dataset_effects,Dataset-level effects for candidates prioritized for biological interpretation.,,classifier/scripts/28_build_final_candidate_thesis_outputs.R,F10_interpretation_top15_dataset_effects.png
+F11,F11_candidate_cpg_meta_analysis,Cross-study-supported Elastic-Net-derived candidates with the final interpretation panel highlighted.,5.6,classifier/scripts/28_build_final_candidate_thesis_outputs.R,F11_candidate_cpg_meta_analysis.png
+F12,F12_beta_histogram_raw_vs_combat,Raw and ComBat beta-value distributions remain bounded and comparable.,7.1,data_preprocessing/01_preprocessing_liver.R,beta_histogram_raw_vs_combat.png
+F12A,F12A_beta_distribution_by_diseasegroup_combat,ComBat beta-value distributions remain comparable across final DiseaseGroup labels.,,data_preprocessing/01_preprocessing_liver.R,
+F13,F13_pca_pc1_pc2_diseasegroup_raw_vs_combat,Raw-vs-ComBat PCA colored by the main DiseaseGroup definition.,5.1,data_preprocessing/02_pca_liver.R,pca_pc1_pc2_diseasegroup_raw_vs_combat.png
+F14,F14_pca_pc1_pc2_progression3_raw_vs_combat,Raw-vs-ComBat PCA colored by simplified Progression3.,,data_preprocessing/02_pca_liver.R,pca_pc1_pc2_progression3_raw_vs_combat.png
+F15,F15_scree_raw_vs_combat_top10,Top-ten PCA variance explained for Raw and ComBat matrices.,,data_preprocessing/02_pca_liver.R,scree_raw_top10.png / scree_combat_top10.png
+F15A,F15A_pca_pc1_pc2_array_sex_raw_vs_combat,Raw-vs-ComBat PCA colored by array platform and sex.,7.2,data_preprocessing/02_pca_liver.R,pca_pc1_pc2_array.png
+F16,F16_within_dataset_pca_pc1_pc2_diseasegroup_raw,Within-study PCA on the raw/pre-ComBat matrix; color = DiseaseGroup.,7.3,data_preprocessing/02_pca_liver.R,F16_within_dataset_pca_pc1_pc2_diseasegroup_raw.png
+F19,F19_classifier_cohort_overview,"Classifier cohort remapped into 4-class, 3-class, and binary targets.",,epigenetic_age/01_epi_age_calculation.R,cohort_overview_faceted.png
+F20A,F20A_eaa_violin_diseasegroup_raw_all_clocks,Residual EAA by DiseaseGroup for Raw beta values.,,epigenetic_age/01_epi_age_calculation.R,EAA_violin_DiseaseGroup_Raw.png
+F20B,F20B_eaa_violin_diseasegroup_combat_all_clocks,Residual EAA by DiseaseGroup for ComBat beta values.,5.2,epigenetic_age/01_epi_age_calculation.R,EAA_violin_DiseaseGroup_ComBat.png
+F20C,F20C_eaa_violin_diseasegroup_combat_selected_clocks,Selected ComBat EAA clocks shown in a compact DiseaseGroup violin panel.,,epigenetic_age/01_epi_age_calculation.R,EAA_violin_DiseaseGroup_ComBat.png
+F22,F22_beta_CI_diseasegroup_precombat_all_clocks,Adjusted DiseaseGroup effects on residual EAA in the primary Raw/pre-ComBat analysis.,5.3,epigenetic_age/03_eaa_audit_outputs.R,F22_beta_CI_diseasegroup_precombat_all_clocks.png
+F22A,F22A_beta_CI_diseasegroup_combat_selected_clocks,"Selected-clock DiseaseGroup effects on residual EAA for Horvath1, PCHorvath1, HepClock, and LiverClock.",,epigenetic_age/01_epi_age_calculation.R,beta_CI_DiseaseGroup_ComBat.png
+F24A,F24A_scatter_diseasegroup_raw_all_clocks,Raw epigenetic clock outputs versus chronological age by DiseaseGroup.,,epigenetic_age/01_epi_age_calculation.R,scatter_DiseaseGroup_Raw.png
+F24B,F24B_scatter_diseasegroup_combat_all_clocks,ComBat epigenetic clock outputs versus chronological age by DiseaseGroup.,7.5,epigenetic_age/01_epi_age_calculation.R,scatter_DiseaseGroup_ComBat.png
+F25,F25_kurokawa_transfer_classifier_predictions,Cross-etiology transfer of the binary classifier to the Kurokawa cohort.,5.7,classifier/scripts/25_kurokawa_transfer_analysis.R,F25_kurokawa_transfer_classifier_predictions.png
+F26,johnson_all_holdout_4class_predictions_after_kim,Four-class predictions for the Johnson holdout cohort.,7.8,classifier/scripts/24_plot_johnson_holdout_validation.R,johnson_all_holdout_4class_predictions_after_kim.png
+F33,F33_candidate_cpg_hierarchical_evidence_map,Candidate CpG evidence map for the corrected sparse-stability pipeline.,,classifier/scripts/28_build_final_candidate_thesis_outputs.R,F33_candidate_cpg_hierarchical_evidence_map.png

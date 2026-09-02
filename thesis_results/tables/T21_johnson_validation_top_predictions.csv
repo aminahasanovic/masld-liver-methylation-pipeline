@@ -1,0 +1,19 @@
+holdout_label,outcome_label,source_label,model_label,top_prediction,n,total,fraction
+Johnson Healthy_Obese only,4-class,Johnson Healthy_Obese,Elastic Net,Advanced_Fibrosis,192,210,0.9142857142857144
+Johnson Healthy_Obese only,4-class,Johnson Healthy_Obese,Random Forest,Advanced_Fibrosis,204,210,0.9714285714285714
+Johnson Healthy_Obese only,4-class,Johnson Healthy_Obese,Boosted Trees,Advanced_Fibrosis,181,210,0.861904761904762
+Johnson Healthy_Obese only,5-class,Johnson Healthy_Obese,Elastic Net,Advanced_Fibrosis,205,210,0.9761904761904762
+Johnson Healthy_Obese only,5-class,Johnson Healthy_Obese,Random Forest,Advanced_Fibrosis,193,210,0.919047619047619
+Johnson Healthy_Obese only,5-class,Johnson Healthy_Obese,Boosted Trees,Advanced_Fibrosis,197,210,0.938095238095238
+All Johnson,4-class,Johnson Healthy_Obese,Elastic Net,MASL_MASH,154,210,0.7333333333333333
+All Johnson,4-class,Johnson Healthy_Obese,Random Forest,Healthy,114,210,0.5428571428571428
+All Johnson,4-class,Johnson Healthy_Obese,Boosted Trees,MASL_MASH,154,210,0.7333333333333333
+All Johnson,4-class,Johnson Advanced_Fibrosis,Elastic Net,MASL_MASH,115,115,1
+All Johnson,4-class,Johnson Advanced_Fibrosis,Random Forest,MASL_MASH,114,115,0.991304347826087
+All Johnson,4-class,Johnson Advanced_Fibrosis,Boosted Trees,MASL_MASH,115,115,1
+All Johnson,5-class,Johnson Healthy_Obese,Elastic Net,MASL_MASH,179,210,0.8523809523809524
+All Johnson,5-class,Johnson Healthy_Obese,Random Forest,Healthy,162,210,0.7714285714285715
+All Johnson,5-class,Johnson Healthy_Obese,Boosted Trees,MASL_MASH,200,210,0.9523809523809524
+All Johnson,5-class,Johnson Advanced_Fibrosis,Elastic Net,MASL_MASH,114,115,0.991304347826087
+All Johnson,5-class,Johnson Advanced_Fibrosis,Random Forest,MASL_MASH,102,115,0.8869565217391304
+All Johnson,5-class,Johnson Advanced_Fibrosis,Boosted Trees,MASL_MASH,115,115,1

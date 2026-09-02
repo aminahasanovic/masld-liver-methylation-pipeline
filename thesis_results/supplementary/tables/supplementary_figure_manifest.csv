@@ -1,0 +1,7 @@
+figure,file_stem,main_message,placement,source_script
+S01,S01_interpretation_top15_beta_by_4class_compact,Final interpretation-panel CpGs across the primary 4-class disease grouping.,supplementary,classifier/scripts/28_build_final_candidate_thesis_outputs.R
+S02,S02_candidate_cpg_meta_effect_heatmap,Dataset-level candidate CpG effects from sparse-stability meta-analysis outputs.,supplementary,classifier/scripts/28_build_final_candidate_thesis_outputs.R
+S04,S04_cpg_filtering_selection_flow,"Candidate CpG workflow documenting sparse stability, post-selection support, strict internal support, manual review, and interpretation-panel selection.",supplementary,classifier/scripts/28_build_final_candidate_thesis_outputs.R
+S05,S05_umap_tsne_diseasegroup_combat_pca30,Exploratory UMAP/t-SNE sample structure colored by DiseaseGroup.,supplementary,data_preprocessing/03_umap_tsne_liver.R
+S06,S06_umap_tsne_progression3_combat_pca30,Exploratory UMAP/t-SNE sample structure colored by Progression3.,supplementary,data_preprocessing/03_umap_tsne_liver.R
+S07,S07_umap_tsne_dataset_combat_pca30,Exploratory UMAP/t-SNE sample structure colored by dataset.,supplementary,data_preprocessing/03_umap_tsne_liver.R

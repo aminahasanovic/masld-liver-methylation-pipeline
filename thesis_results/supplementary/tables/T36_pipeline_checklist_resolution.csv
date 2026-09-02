@@ -1,0 +1,13 @@
+priority,point,status,implemented_output_or_note
+High,Exact classifier input unclear,resolved,"T26 documents that the primary classifier uses beta_all_liver_commonCpGs_filtered.rds, before global imputation and before ComBat."
+High,LOSO schema not consistently described,resolved,"T28 lists six held-out study folds, training studies, held-out study, and class counts."
+High,"Seeds, stratification, CV details missing",resolved,"T27 lists run IDs, seed=123, split rules, fold counts, and tuning metric."
+High,EAA multiple testing not fully documented,resolved,scripts/03_epi_age_calculation.R now writes BH-FDR columns; T29/T30 expose all EAA contrasts and FDR summary.
+High,Metadata fields incompletely described,resolved,"T24 is a data dictionary for pheno_all_liver_filtered.rds with type, missingness, and use."
+Medium,Exact exclusion chain from 669 array profiles to the final cohort missing,resolved,T25 summarizes the sample-level exclusion flow to the final 621 samples (640 array profiles): 26 PBC/PSC and 3 unknown/unclassified samples excluded.
+Medium,Cell-composition/histology control missing,documented limitation,"T24/T36 note available metadata; no harmonized cell-composition or histology covariates exist in final pheno_all, so this remains a limitation."
+Medium,Classifier baselines under covariate sets absent from main view,partly resolved,T31 reports available covariate-set runs and explicitly marks missing/not-run combinations.
+Medium,Stability criterion for CpG selection not explicit,resolved,T33 states nonzero_folds >= 4 default and downstream strict/meta criteria.
+Medium,RF/XGBoost hyperparameter grids not documented,resolved,T32 lists RF and XGBoost tuning grids and environment overrides.
+Low,Small inconsistencies in result numbers,covered by audit,T35 summarizes the automated output sanity audit.
+Low,Package/software versions missing,resolved,T34 and outputs/reports/session_info_pipeline.txt capture runtime and package versions.

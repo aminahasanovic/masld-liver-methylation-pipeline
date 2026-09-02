@@ -1,0 +1,7 @@
+"Dataset","final_EAA_eligible_n","BMI_available_n","BMI_missing_n","BMI_source_variable"
+"Ahrens",59,59,0,"BMI (GSE48325 series_matrix !Sample_characteristics_ch1:bmi)"
+"Horvath",53,53,0,"BMI (GEO characteristics_ch1:bmi)"
+"Johnson",325,325,0,"BMI (GEO characteristics_ch1:bmi; retained after Individual_ID technical replicate resolution)"
+"ITEN",106,0,106,"Not available in ITEN BioSample workbook, BioSample-IDAT map, KSE102917 IDF, or processed ITEN phenotype"
+"VanDijck",22,22,0,"BMI (GEO characteristics_ch1:bmi)"
+"Murphy",0,0,0,"Not available; Murphy excluded from EAA because age/sex are missing"

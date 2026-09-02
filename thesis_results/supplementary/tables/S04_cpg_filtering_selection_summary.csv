@@ -1,0 +1,6 @@
+stage_id,stage_label,unique_cpgs,source_file,filter_summary
+stable_elastic_net_selected_cpgs,Stable Elastic-Net-selected CpGs,488,elastic_net_cpg_annotation_priority_unique.csv,Sparse stability union after applying nonzero_folds >= 4 within each eligible standard LOSO analysis.
+cross_study_supported_candidates,Cross-study-supported Elastic-Net-derived candidates,324,elastic_net_cpg_candidate_summary.csv,Post-selection study-specific models and random-effects meta-analysis; not independent validation.
+strict_internal_support_subset,Strict internal-support subset,33,elastic_net_candidate_cpg_meta_strict_unique.csv,Conservative internal-support subset from the candidate meta-analysis.
+manual_biological_review_top30,Manual biological review of statistical Top 30,30,elastic_net_cpg_biological_review.csv,Manual structured literature curation of the top 30 statistically ranked candidates.
+interpretation_panel_top15,Candidates prioritized for biological interpretation,15,elastic_net_cpg_interpretation_top15.csv,Manual interpretation panel selected only by include_in_interpretation_panel and ordered by final_interpretation_priority.

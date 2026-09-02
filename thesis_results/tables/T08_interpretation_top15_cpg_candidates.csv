@@ -1,0 +1,16 @@
+interpretation_priority,statistical_rank,CpG,gene_genomic_context,strongest_contrast,strongest_supported_contrast,direction,FDR,n_datasets,strongest_contrast_i2,strict_internal_support_subset,biological_evidence_class
+1,3,cg07953015,SELENOW,advanced_vs_nonadvanced,Advanced vs non-advanced,higher methylation in case/higher stage,1.0849957729937783e-73,3,0,yes,A
+2,12,cg21519787,SPHK2,advanced_vs_nonadvanced,Advanced vs non-advanced,higher methylation in case/higher stage,1.876972597072709e-50,3,0,no,A
+3,16,cg10732871,GPX4,advanced_vs_nonadvanced,Advanced vs non-advanced,lower methylation in case/higher stage,3.522297921022463e-43,3,21.646552112662548,no,A
+4,5,cg08928408,intergenic; WWTR1-proximal,advanced_vs_nonadvanced,Advanced vs non-advanced,lower methylation in case/higher stage,3.5812472605171675e-46,3,0,no,C
+5,13,cg07156249,PSMB9/TAP1,advanced_vs_nonadvanced,Advanced vs non-advanced,lower methylation in case/higher stage,8.562938906323175e-41,3,9.790698210009351,no,A
+6,29,cg24249925,DDR2,advanced_vs_nonadvanced,Advanced vs non-advanced,higher methylation in case/higher stage,1.513872923683423e-11,3,0,yes,A
+7,28,cg06686742,CERS4,advanced_vs_nonadvanced,Advanced vs non-advanced,higher methylation in case/higher stage,4.752894107819695e-41,3,0,no,A
+8,7,cg05099464,ARHGEF12,disease_vs_healthy,Disease vs healthy,lower methylation in case/higher stage,4.1436897817863416e-93,5,0,no,B
+9,25,cg25792518,ACSF2/CHAD,advanced_vs_nonadvanced,Advanced vs non-advanced,higher methylation in case/higher stage,1.0529092598367929e-50,3,0,no,B
+10,10,cg06974428,PIP4K2A,advanced_vs_nonadvanced,Advanced vs non-advanced,lower methylation in case/higher stage,3.2602906984842676e-91,3,0,no,C
+11,20,cg09072216,SPART,advanced_vs_nonadvanced,Advanced vs non-advanced,lower methylation in case/higher stage,6.0146470304549914e-37,3,0,no,C
+12,30,cg24921221,LONRF1,advanced_vs_nonadvanced,Advanced vs non-advanced,lower methylation in case/higher stage,2.4818783955454416e-20,3,54.43199416969931,no,A
+13,8,cg22946219,RAI1,disease_vs_healthy,Disease vs healthy,higher methylation in case/higher stage,2.2258980742442844e-65,5,0,no,D
+14,1,cg10987682,intergenic; unannotated,disease_vs_healthy,Disease vs healthy,lower methylation in case/higher stage,2.070779326133493e-61,5,1.2757381554674792,yes,U
+15,2,cg09870609,intergenic; unannotated,advanced_vs_nonadvanced,Advanced vs non-advanced,lower methylation in case/higher stage,1.9267152088854544e-94,3,0,yes,U

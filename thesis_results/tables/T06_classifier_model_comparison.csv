@@ -1,0 +1,25 @@
+Outcome,Validation,Model,Accuracy,Balanced accuracy,MCC,Macro F1,AUC
+5-class,Train/test,Elastic Net,0.821,0.854,0.761,0.751,0.949
+5-class,Train/test,Random Forest,0.821,0.858,0.761,0.765,0.955
+5-class,Train/test,Boosted Trees,0.821,0.862,0.762,0.761,0.955
+5-class,LOSO,Elastic Net,0.089,0.443,-0.185,0.113,0.647
+5-class,LOSO,Random Forest,0.074,0.433,-0.164,0.057,0.627
+5-class,LOSO,Boosted Trees,0.063,0.426,-0.224,0.091,0.652
+4-class,Train/test,Elastic Net,0.842,0.85,0.76,0.769,0.962
+4-class,Train/test,Random Forest,0.815,0.834,0.718,0.752,0.953
+4-class,Train/test,Boosted Trees,0.848,0.863,0.772,0.777,0.955
+4-class,LOSO,Elastic Net,0.233,0.442,-0.104,0.162,0.71
+4-class,LOSO,Random Forest,0.391,0.495,0.05,0.198,0.702
+4-class,LOSO,Boosted Trees,0.333,0.473,-0.003,0.18,0.692
+3-class,Train/test,Elastic Net,0.804,0.835,0.688,0.786,0.957
+3-class,Train/test,Random Forest,0.837,0.861,0.743,0.821,0.96
+3-class,Train/test,Boosted Trees,0.821,0.843,0.715,0.795,0.972
+3-class,LOSO,Elastic Net,0.264,0.438,-0.117,0.232,0.67
+3-class,LOSO,Random Forest,0.362,0.488,0.007,0.284,0.721
+3-class,LOSO,Boosted Trees,0.291,0.447,-0.086,0.239,0.705
+Binary,Train/test,Elastic Net,0.897,0.897,0.795,0.897,0.959
+Binary,Train/test,Random Forest,0.886,0.887,0.774,0.886,0.952
+Binary,Train/test,Boosted Trees,0.897,0.898,0.796,0.897,0.963
+Binary,LOSO,Elastic Net,0.597,0.59,0.211,0.565,0.691
+Binary,LOSO,Random Forest,0.655,0.65,0.327,0.639,0.788
+Binary,LOSO,Boosted Trees,0.636,0.631,0.286,0.618,0.76

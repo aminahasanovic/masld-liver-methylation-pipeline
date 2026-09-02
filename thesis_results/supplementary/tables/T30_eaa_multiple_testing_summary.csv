@@ -1,0 +1,5 @@
+"StageVar","analysis_role","matrix","Correction","n_tests","n_clocks","n_group_contrasts","min_nominal_p","min_bh_fdr","n_nominal_p_lt_0_05","n_bh_fdr_lt_0_05","adjustment"
+"DiseaseGroup","primary","Raw/pre-ComBat","Raw betas",60,12,5,1.38845202260207e-20,8.33071213561242e-19,43,41,"Benjamini-Hochberg within each StageVar x matrix family"
+"DiseaseGroup","sensitivity","ComBat","ComBat betas",60,12,5,1.56433009402821e-20,9.38598056416926e-19,41,40,"Benjamini-Hochberg within each StageVar x matrix family"
+"Progression3","primary","Raw/pre-ComBat","Raw betas",24,12,2,1.5471478393763e-26,3.71315481450312e-25,21,21,"Benjamini-Hochberg within each StageVar x matrix family"
+"Progression3","sensitivity","ComBat","ComBat betas",24,12,2,9.9243499540498e-21,2.38184398897195e-19,21,21,"Benjamini-Hochberg within each StageVar x matrix family"

@@ -1,0 +1,7 @@
+Dataset,source_samples_before_final_filter,final_included_n,excluded_n,raw_label_examples,final_diseasegroup_counts,exclusion_reasons,harmonization_note
+Ahrens,62,59,3,Healthy Obese; NAFLD; NASH; NORMAL; unknown,Healthy: 17; Healthy_Obese: 17; MASH: 15; MASL: 10,Excluded: unknown/unclassified: 3,"Original group labels were mapped to Healthy, Healthy_Obese, MASL, and MASH; unknown/unclassified labels were excluded."
+Horvath,79,53,26,Control; HealthyObese; NAFLD; NASH; PBC; PSC,Healthy: 23; MASL: 16; Mild_Fibrosis: 9; MASH: 4; Healthy_Obese: 1,Excluded: PBC/PSC autoimmune liver disease: 26,"Disease status plus fibrosis fields were used to separate MASL/MASH, Mild_Fibrosis, and Advanced_Fibrosis; PBC/PSC labels were excluded."
+Johnson,325,325,0,Grade0; Grade3; Grade34; Grade4,Healthy_Obese: 210; Advanced_Fibrosis: 115,NA,Liver samples were retained; disease-state grade 0 was mapped to Healthy_Obese and grade 3/4 to Advanced_Fibrosis.
+ITEN,106,106,0,Control; MASH; MASL,MASH: 58; Healthy: 31; MASL: 17,NA,"KBDS isolate labels Control, MASL, and MASH were mapped directly to final disease groups."
+Murphy,56,56,0,advanced; mild,Mild_Fibrosis: 33; Advanced_Fibrosis: 23,NA,Stage labels were mapped to Mild_Fibrosis or Advanced_Fibrosis; age and sex were not available in the harmonized metadata.
+VanDijck,22,22,0,MASH F0-F1; MASH F2-F4; MASL; no MASLD,MASL: 7; Advanced_Fibrosis: 5; Mild_Fibrosis: 5; Healthy: 3; MASH: 2,NA,Source-name and fibrosis fields were harmonized; MASH F2-F4 was treated as Advanced_Fibrosis/significant fibrosis.

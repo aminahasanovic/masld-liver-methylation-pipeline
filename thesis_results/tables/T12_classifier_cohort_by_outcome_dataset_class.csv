@@ -1,0 +1,40 @@
+Outcome,Dataset,Class,n
+4-class,Ahrens,Healthy,34
+4-class,Ahrens,MASL/MASH,25
+4-class,Horvath,Healthy,24
+4-class,Horvath,MASL/MASH,20
+4-class,Horvath,Mild fibrosis,9
+4-class,Johnson,Healthy,210
+4-class,Johnson,Advanced fibrosis,115
+4-class,ITEN,Healthy,31
+4-class,ITEN,MASL/MASH,75
+4-class,Murphy,Mild fibrosis,33
+4-class,Murphy,Advanced fibrosis,23
+4-class,VanDijck,Healthy,3
+4-class,VanDijck,MASL/MASH,9
+4-class,VanDijck,Mild fibrosis,5
+4-class,VanDijck,Advanced fibrosis,5
+3-class,Ahrens,Healthy,34
+3-class,Ahrens,Mild disease,25
+3-class,Horvath,Healthy,24
+3-class,Horvath,Mild disease,29
+3-class,Johnson,Healthy,210
+3-class,Johnson,Advanced fibrosis,115
+3-class,ITEN,Healthy,31
+3-class,ITEN,Mild disease,75
+3-class,Murphy,Mild disease,33
+3-class,Murphy,Advanced fibrosis,23
+3-class,VanDijck,Healthy,3
+3-class,VanDijck,Mild disease,14
+3-class,VanDijck,Advanced fibrosis,5
+Binary,Ahrens,Healthy,34
+Binary,Ahrens,Disease,25
+Binary,Horvath,Healthy,24
+Binary,Horvath,Disease,29
+Binary,Johnson,Healthy,210
+Binary,Johnson,Disease,115
+Binary,ITEN,Healthy,31
+Binary,ITEN,Disease,75
+Binary,Murphy,Disease,56
+Binary,VanDijck,Healthy,3
+Binary,VanDijck,Disease,19

@@ -1,0 +1,22 @@
+Dataset,DiseaseGroup,Progression3,n
+Ahrens,Healthy,Healthy,17
+Ahrens,Healthy obese,Healthy,17
+Ahrens,MASL,Mild disease,10
+Ahrens,MASH,Mild disease,15
+Horvath,Healthy,Healthy,23
+Horvath,Healthy obese,Healthy,1
+Horvath,MASL,Mild disease,16
+Horvath,MASH,Mild disease,4
+Horvath,Mild fibrosis,Mild disease,9
+ITEN,Healthy,Healthy,31
+ITEN,MASL,Mild disease,17
+ITEN,MASH,Mild disease,58
+Johnson,Healthy obese,Healthy,210
+Johnson,Advanced fibrosis,Advanced fibrosis,115
+Murphy,Mild fibrosis,Mild disease,33
+Murphy,Advanced fibrosis,Advanced fibrosis,23
+VanDijck,Healthy,Healthy,3
+VanDijck,MASL,Mild disease,7
+VanDijck,MASH,Mild disease,2
+VanDijck,Mild fibrosis,Mild disease,5
+VanDijck,Advanced fibrosis,Advanced fibrosis,5

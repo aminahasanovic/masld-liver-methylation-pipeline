@@ -1,0 +1,27 @@
+# Data
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/metadata/*
+!data/metadata/.gitkeep
+data/references/*
+!data/references/.gitkeep
+
+# Pipeline output
+outputs/
+results/
+classifier/results/
+classifier/data/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+
+# Editors and OS
+.DS_Store
+*.swp
+.vscode/
+.idea/

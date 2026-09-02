@@ -1,0 +1,7 @@
+Dataset,n_samples,age_available_n,age_available_percent,sex_available_n,sex_available_percent,disease_state_available_n,disease_state_available_percent,final_diseasegroup_available_n,final_progression3_available_n,fibrosis_available_n,steatosis_available_n,nafld_activity_score_available_n,inflammation_available_n,ballooning_available_n
+Ahrens,59,59,100,59,100,59,100,59,59,0,0,0,0,0
+Horvath,53,53,100,53,100,53,100,53,53,52,49,52,49,49
+Johnson,325,325,100,325,100,325,100,325,325,0,0,0,0,0
+ITEN,106,106,100,106,100,106,100,106,106,0,0,0,0,0
+Murphy,56,0,0,0,0,56,100,56,56,0,0,0,0,0
+VanDijck,22,22,100,22,100,22,100,22,22,22,22,0,22,22

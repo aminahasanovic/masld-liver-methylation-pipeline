@@ -1,0 +1,11 @@
+model,setting,value,source,notes
+All models,feature_selection,Top 5000 most variable CpGs,classifier/scripts/02_feature_selection.R,For train/test this is done on training samples; for LOSO it is repeated inside each held-out-study fold.
+Elastic Net,alpha_grid,0;0.25;0.5;0.75;1,classifier/config/classifier_config.yaml,Ridge-to-lasso mixing grid.
+Elastic Net,lambda_grid,"10^seq(-4, 1, length.out = 20)",classifier/scripts/03_train_elastic_net.R; classifier/scripts/07_evaluate_loso_elastic_net.R,Regularization grid.
+Elastic Net,inner_cv,"train/test uses config cv_folds=10; LOSO uses min(5, minimum class n in training fold)",classifier/scripts/03_train_elastic_net.R; classifier/scripts/07_evaluate_loso_elastic_net.R,LOSO tuning occurs inside each training fold.
+Random Forest,trees,500 by default; override CLASSIFIER_RF_NUM_TREES,classifier/scripts/04_train_random_forest.R; classifier/scripts/16_evaluate_loso_random_forest.R,Sensitivity model.
+Random Forest,mtry_grid,"sqrt(p), p/20, p/10 rounded and clipped; override CLASSIFIER_RF_MTRY_GRID",classifier/scripts/04_train_random_forest.R; classifier/scripts/16_evaluate_loso_random_forest.R,p is number of predictors after feature selection and covariate encoding.
+Random Forest,min_node_size_grid,"1, 5, 10 by default; override CLASSIFIER_RF_MIN_NODE_SIZE_GRID",classifier/scripts/04_train_random_forest.R; classifier/scripts/16_evaluate_loso_random_forest.R,Grid is clipped to training n.
+Random Forest,tune_metric,Balanced_Accuracy by default; override CLASSIFIER_RF_TUNE_METRIC,classifier/scripts/04_train_random_forest.R; classifier/scripts/16_evaluate_loso_random_forest.R,"Allowed: Accuracy, Balanced_Accuracy, Macro_F1."
+Boosted Trees,xgb_grid,"nrounds=50,100; max_depth=2,3; eta=0.05,0.1; gamma=0; colsample_bytree=0.8; min_child_weight=1,5; subsample=0.8",classifier/scripts/05_train_boosted_trees.R,All values can be overridden by CLASSIFIER_XGB_* environment variables.
+Boosted Trees,inner_cv,"3 folds by default; min(3, minimum class n in training fold)",classifier/scripts/05_train_boosted_trees.R,Repeated inside LOSO folds.

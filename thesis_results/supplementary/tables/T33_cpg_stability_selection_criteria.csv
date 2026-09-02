@@ -1,0 +1,9 @@
+selection_layer,criterion,value,source
+Stable annotation input,Minimum LOSO non-zero coefficient frequency,4,classifier/scripts/09_annotate_elastic_net_cpgs.R
+Current primary LOSO design,Number of held-out study folds,6,T28_classifier_loso_fold_design.csv
+Observed primary 4-class Elastic Net frequency,Distribution of nonzero_folds,1 folds=4311; 2 folds=522; 3 folds=238; 4 folds=142; 5 folds=115; 6 folds=60,elastic_net_loso_nonzero_feature_frequency_disease_group_4_cpg_only_loso.csv
+Cross-study robust meta tier 1,Rule,n_datasets >= 3; FDR < 0.05; direction_consistency == 1; not likely_dataset_sensitive,classifier/scripts/11_meta_analyze_candidate_cpgs.R
+Cross-study robust meta tier 2,Rule,n_datasets >= 3; FDR < 0.10; direction_consistency >= 0.75; disease_r2_after_dataset >= 0.02,classifier/scripts/11_meta_analyze_candidate_cpgs.R
+Cross-study strict subset,Rule,stage/binary Elastic Net evidence; n_datasets >= 3; same direction; FDR < 0.05; I2 < 50; dataset R2 <= disease-group R2,classifier/scripts/11_meta_analyze_candidate_cpgs.R
+Thesis candidate ranking,Score,"Favors multiple robust contrasts, tier-1 evidence, same direction, more datasets, Elastic Net stability; penalizes heterogeneity/dataset sensitivity.",classifier/scripts/12_build_thesis_cpg_candidate_plots.R
+Biology-aware Top 15,Score,Adds curated liver/MASLD biological-support score to the statistical thesis score.,classifier/scripts/13_add_biological_context_top_cpgs.R

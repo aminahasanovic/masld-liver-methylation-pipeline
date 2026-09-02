@@ -1,0 +1,13 @@
+parameter,value
+input_matrix,ComBat beta matrix
+feature_selection,"Top 50,000 most variable complete CpGs"
+embedding_input,First 30 PCs from selected CpGs
+random_seed,20260611
+umap_package,uwot
+umap_n_neighbors,15
+umap_min_dist,0.1
+umap_metric,euclidean
+tsne_package,Rtsne
+tsne_perplexity,30
+tsne_theta,0.5
+tsne_max_iter,1000

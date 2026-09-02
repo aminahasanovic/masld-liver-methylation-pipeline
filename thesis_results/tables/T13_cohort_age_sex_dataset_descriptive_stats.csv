@@ -1,0 +1,10 @@
+Grouping,Group,total_n,age_n,age_mean,age_sd,age_median,age_q1,age_q3,age_min,age_max,sex_distribution,dataset_distribution
+DiseaseGroup,Advanced fibrosis,143,120,50.3,10,52,45,57,23,71,Female: 85 (59.4%); Male: 35 (24.5%); Missing: 23 (16.1%),Johnson: 115 (80.4%); Murphy: 23 (16.1%); VanDijck: 5 (3.5%)
+DiseaseGroup,Healthy,74,74,57.6,16.3,58,44,71.8,23,86,Female: 41 (55.4%); Male: 33 (44.6%),Ahrens: 17 (23%); Horvath: 23 (31.1%); ITEN: 31 (41.9%); VanDijck: 3 (4.1%)
+DiseaseGroup,Healthy obese,228,228,47.3,12.2,47.5,37,56,18,75,Female: 187 (82%); Male: 41 (18%),Ahrens: 17 (7.5%); Horvath: 1 (0.4%); Johnson: 210 (92.1%)
+DiseaseGroup,MASH,79,79,52.2,13.9,53,41,63,21,80,Female: 49 (62%); Male: 30 (38%),Ahrens: 15 (19%); Horvath: 4 (5.1%); ITEN: 58 (73.4%); VanDijck: 2 (2.5%)
+DiseaseGroup,MASL,50,50,47.5,13.5,46,39.2,58.5,24,79,Female: 25 (50%); Male: 25 (50%),Ahrens: 10 (20%); Horvath: 16 (32%); ITEN: 17 (34%); VanDijck: 7 (14%)
+DiseaseGroup,Mild fibrosis,47,14,47,10.9,44,39.8,58,29,64,Female: 3 (6.4%); Male: 11 (23.4%); Missing: 33 (70.2%),Horvath: 9 (19.1%); Murphy: 33 (70.2%); VanDijck: 5 (10.6%)
+Progression3,Advanced fibrosis,143,120,50.3,10,52,45,57,23,71,Female: 85 (59.4%); Male: 35 (24.5%); Missing: 23 (16.1%),Johnson: 115 (80.4%); Murphy: 23 (16.1%); VanDijck: 5 (3.5%)
+Progression3,Healthy,302,302,49.8,14,49.5,38.2,59,18,86,Female: 228 (75.5%); Male: 74 (24.5%),Ahrens: 34 (11.3%); Horvath: 24 (7.9%); ITEN: 31 (10.3%); Johnson: 210 (69.5%); VanDijck: 3 (1%)
+Progression3,Mild disease,176,143,50,13.6,49,40,62,21,80,Female: 77 (43.8%); Male: 66 (37.5%); Missing: 33 (18.8%),Ahrens: 25 (14.2%); Horvath: 29 (16.5%); ITEN: 75 (42.6%); Murphy: 33 (18.8%); VanDijck: 14 (8%)

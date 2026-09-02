@@ -1,0 +1,23 @@
+component,name,version,status,note
+Runtime,R,R version 4.5.0 (2025-04-11),available,x86_64-pc-linux-gnu
+Runtime,Project date,2026-08-13,available,Date of table generation
+Version control,git_head,f87ac00,available,Repository currently has no resolvable HEAD commit if version is NA.
+Environment lock,renv.lock,,not_available,No renv.lock was present at project root if status is not_available.
+R package,dplyr,1.2.1,installed,
+R package,readr,2.2.0,installed,
+R package,tidyr,1.3.2,installed,
+R package,ggplot2,4.0.3,installed,
+R package,caret,7.0.1,installed,
+R package,glmnet,4.1.10,installed,
+R package,ranger,0.18.0,installed,
+R package,xgboost,3.2.1.1,installed,
+R package,yardstick,1.4.0,installed,
+R package,pROC,1.19.0.1,installed,
+R package,Matrix,1.7.5,installed,
+R package,minfi,1.56.0,installed,
+R package,ChAMP,2.40.0,installed,
+R package,sva,3.58.0,installed,
+R package,methylCIPHER,0.2.0,installed,
+R package,CTSclocks,0.0.1,installed,
+R package,yaml,2.3.12,installed,
+R package,rmarkdown,2.31,installed,

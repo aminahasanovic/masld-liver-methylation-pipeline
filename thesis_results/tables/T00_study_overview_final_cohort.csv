@@ -1,0 +1,7 @@
+Dataset,n_samples,array_platforms,n_450k,n_epic,healthy_n,mild_disease_n,advanced_fibrosis_n,age_median_iqr,sex_counts,diseasegroup_counts
+Ahrens,59,450K,59,0,34,25,0,47 (41.5-54.5),Female: 44; Male: 15,Healthy: 17; Healthy obese: 17; MASH: 15; MASL: 10
+Horvath,53,450K,53,0,24,29,0,49 (41-71),Male: 32; Female: 21,Healthy: 23; MASL: 16; Mild fibrosis: 9; MASH: 4; Healthy obese: 1
+Johnson,325,EPIC,0,325,210,0,115,50 (40-57),Female: 251; Male: 74,Healthy obese: 210; Advanced fibrosis: 115
+ITEN,106,EPIC,0,106,31,75,0,56 (44-65),Female: 57; Male: 49,MASH: 58; Healthy: 31; MASL: 17
+Murphy,56,450K,56,0,0,33,23,NA,NA,Mild fibrosis: 33; Advanced fibrosis: 23
+VanDijck,22,EPIC,0,22,3,14,5,41.5 (37.5-50.2),Female: 17; Male: 5,MASL: 7; Advanced fibrosis: 5; Mild fibrosis: 5; Healthy: 3; MASH: 2

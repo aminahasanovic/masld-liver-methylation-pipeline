@@ -1,0 +1,5 @@
+step,stage,starting_n,excluded_n,retained_n,note
+1,Harmonized beta-profile samples before final disease-group exclusions,650,0,650,After technical replicate resolution and common-CpG harmonization.
+2,Apply exclusion: Excluded: PBC/PSC autoimmune liver disease,650,26,624,Counts are sample-level rows from sample_grouping_audit_final_check.csv
+3,Apply exclusion: Excluded: unknown/unclassified,650,3,621,Counts are sample-level rows from sample_grouping_audit_final_check.csv
+4,Final included analysis/classifier cohort,650,29,621,Matches pheno_all_liver_filtered.rds

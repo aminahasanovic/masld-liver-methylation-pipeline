@@ -1,0 +1,8 @@
+dataset,accession,repository,array,role,tracked_in_git,expected_local_path,source_url,notes
+Ahrens,GSE48325,GEO,450K,main_liver_cohort,false,data/raw/Ahrens_GSE48325/,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE48325,Signal intensity table and/or raw tar are used by preprocessing.
+Horvath,GSE61258,GEO,450K,main_liver_cohort,false,data/raw/Horvath_GSE61258/,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE61258,Signal table and series metadata are used by preprocessing.
+Johnson,GSE180474,GEO,EPIC,main_liver_cohort_and_holdout,false,data/raw/Johnson_GSE180474/,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE180474,Signal intensity table is the main classifier-dominant dataset.
+Murphy,GSE49542,GEO,450K,main_liver_cohort,false,data/raw/Murphy_GSE49542/,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE49542,Unmethylated and methylated signal table is used.
+VanDijck,GSE294806,GEO,EPIC,main_liver_cohort,false,data/raw/VanDijck_GSE294806/,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294806,IDATs and provided processed spreadsheets are present locally.
+ITEN,KAP240571,K-BDS,EPIC,main_liver_cohort_if_access_available,false,data/raw/Kim_KSE102917/,https://kbds.re.kr/,K-BDS study accession KAP240571; local input paths and IDAT loading use the submission identifier KSE102917. Local access may be required; do not redistribute without checking source terms.
+Kurokawa,GSE60753,GEO,450K,transfer_analysis,false,data/raw/Kurokawa_GSE60753/,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE60753,Used for liver cross-etiology classifier transfer analysis.

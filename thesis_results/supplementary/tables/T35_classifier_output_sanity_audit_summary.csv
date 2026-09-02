@@ -1,0 +1,2 @@
+status,n_outputs,audit_scope,source
+ok,24,Metrics recomputed from saved prediction files; probability sums and max-probability class checked.,classifier/results/metrics/classifier_output_sanity_audit.csv

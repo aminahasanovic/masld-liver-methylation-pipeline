@@ -1,0 +1,21 @@
+section,metric,value
+Object dimensions,Beta matrix before imputation,377857 x 621
+Object dimensions,Beta matrix after KNN imputation,377857 x 621
+Object dimensions,Beta matrix after ComBat,377857 x 621
+Object dimensions,Final phenotype table,621 x 8
+Preprocessing manifest,Common CpGs retained,377857
+Preprocessing manifest,n_johnson_profiles_before_replicate_resolution,341
+Preprocessing manifest,n_johnson_biological_samples_after_replicate_resolution,325
+Preprocessing manifest,n_murphy_profiles_before_replicate_resolution,59
+Preprocessing manifest,n_murphy_biological_samples_after_replicate_resolution,56
+Preprocessing manifest,n_technical_profiles_removed_by_replicate_resolution,19
+Preprocessing manifest,Beta samples before final intersection,650
+Preprocessing manifest,Phenotype samples before final intersection,621
+Preprocessing manifest,Final matched samples,621
+Preprocessing manifest,ComBat mode,ComBat protected Progression3
+Preprocessing manifest,Filtered beta reference written,yes
+Imputation and ComBat QC,NA fraction before imputation,0
+Imputation and ComBat QC,NA fraction after imputation,0
+Imputation and ComBat QC,NA fraction after ComBat,0
+Imputation and ComBat QC,Minimum ComBat beta,3.81e-32
+Imputation and ComBat QC,Maximum ComBat beta,1

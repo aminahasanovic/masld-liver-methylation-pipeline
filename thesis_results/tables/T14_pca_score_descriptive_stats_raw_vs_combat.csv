@@ -1,0 +1,55 @@
+Correction,StageVar,Group,PC,n,mean,sd,median,q1,q3,min,max
+ComBat,DiseaseGroup,Advanced fibrosis,PC1,143,11.885,10.94,11.638,4.81,19.827,-14.05,40.864
+ComBat,DiseaseGroup,Healthy,PC1,74,-7.318,8.896,-8.879,-14.493,-2.674,-18.374,24.26
+ComBat,DiseaseGroup,Healthy obese,PC1,228,-6.699,6.389,-7.821,-10.765,-3.465,-24.458,12.844
+ComBat,DiseaseGroup,MASH,PC1,79,5.381,13.212,3.011,-4.821,12.498,-14.359,38.441
+ComBat,DiseaseGroup,MASL,PC1,50,-2.79,12.186,-5.956,-10.439,-0.923,-17.196,28.067
+ComBat,DiseaseGroup,Mild fibrosis,PC1,47,1.782,8.594,-0.28,-3.078,4.574,-14.194,25.885
+ComBat,DiseaseGroup,Advanced fibrosis,PC2,143,-1.517,6.405,0.069,-6.163,3.039,-18.847,12.084
+ComBat,DiseaseGroup,Healthy,PC2,74,-0.433,5.867,1.119,-1.289,2.78,-23.362,10.239
+ComBat,DiseaseGroup,Healthy obese,PC2,228,0.133,4.258,1.059,-0.684,2.583,-17.883,7.627
+ComBat,DiseaseGroup,MASH,PC2,79,1.506,3.962,1.952,0.112,3.69,-13.252,8.915
+ComBat,DiseaseGroup,MASL,PC2,50,1.073,4.029,1.802,0.229,3.144,-15.364,7.02
+ComBat,DiseaseGroup,Mild fibrosis,PC2,47,0.982,4.518,1.941,0.997,3.463,-11.356,7.209
+ComBat,DiseaseGroup,Advanced fibrosis,PC3,143,-0.598,5.436,-0.831,-4.181,2.664,-11.078,18.637
+ComBat,DiseaseGroup,Healthy,PC3,74,0.39,2.753,0.311,-1.36,2.082,-5.8,8.218
+ComBat,DiseaseGroup,Healthy obese,PC3,228,0.412,5.455,-0.281,-3.035,3.408,-14.312,19.373
+ComBat,DiseaseGroup,MASH,PC3,79,-0.586,2.54,-0.717,-2.106,0.847,-9.732,6.957
+ComBat,DiseaseGroup,MASL,PC3,50,0.285,2.478,0.449,-1.741,1.807,-4.373,6.098
+ComBat,DiseaseGroup,Mild fibrosis,PC3,47,-0.112,3.546,0.228,-2.727,1.648,-6.786,9.461
+ComBat,Progression3,Advanced fibrosis,PC1,143,11.885,10.94,11.638,4.81,19.827,-14.05,40.864
+ComBat,Progression3,Healthy,PC1,302,-6.851,7.074,-8.063,-11.438,-3.402,-24.458,24.26
+ComBat,Progression3,Mild disease,PC1,176,2.099,12.268,-1.09,-6.302,8.319,-17.196,38.441
+ComBat,Progression3,Advanced fibrosis,PC2,143,-1.517,6.405,0.069,-6.163,3.039,-18.847,12.084
+ComBat,Progression3,Healthy,PC2,302,-0.006,4.699,1.073,-0.776,2.642,-23.362,10.239
+ComBat,Progression3,Mild disease,PC2,176,1.243,4.119,1.924,0.232,3.517,-15.364,8.915
+ComBat,Progression3,Advanced fibrosis,PC3,143,-0.598,5.436,-0.831,-4.181,2.664,-11.078,18.637
+ComBat,Progression3,Healthy,PC3,302,0.407,4.928,-0.052,-2.519,2.641,-14.312,19.373
+ComBat,Progression3,Mild disease,PC3,176,-0.212,2.835,-0.258,-2.052,1.472,-9.732,9.461
+Raw,DiseaseGroup,Advanced fibrosis,PC1,143,8.846,9.548,8.789,2.14,15.073,-11.302,31.811
+Raw,DiseaseGroup,Healthy,PC1,74,-2.83,9.656,-4.277,-8.33,1.091,-21.519,47.761
+Raw,DiseaseGroup,Healthy obese,PC1,228,-7.828,5.355,-8.353,-11.339,-5.208,-23.698,7.819
+Raw,DiseaseGroup,MASH,PC1,79,10.261,12,7.718,0.83,18.172,-7.176,41.315
+Raw,DiseaseGroup,MASL,PC1,50,2.213,16.595,-3.289,-7.449,2.291,-16.739,47.894
+Raw,DiseaseGroup,Mild fibrosis,PC1,47,-4.085,12.252,-8.119,-10.701,-1.473,-21.835,42.719
+Raw,DiseaseGroup,Advanced fibrosis,PC2,143,5.951,8.798,8.734,2.869,11.956,-20.437,20.604
+Raw,DiseaseGroup,Healthy,PC2,74,-9.711,3.512,-9.642,-11.772,-7.469,-18.227,-1.5
+Raw,DiseaseGroup,Healthy obese,PC2,228,6.094,5.661,7.119,3.977,9.49,-10.862,17.153
+Raw,DiseaseGroup,MASH,PC2,79,-8.22,3.696,-8.833,-10.523,-6.894,-14.125,12.044
+Raw,DiseaseGroup,MASL,PC2,50,-8.151,4.491,-8.96,-11.371,-5.368,-15.968,2.748
+Raw,DiseaseGroup,Mild fibrosis,PC2,47,-9.892,5.022,-10.69,-12.766,-7.523,-19.86,7.174
+Raw,DiseaseGroup,Advanced fibrosis,PC3,143,-0.584,3.762,0.115,-2.335,2.018,-14.948,5.11
+Raw,DiseaseGroup,Healthy,PC3,74,-0.479,7.468,-4.827,-6.795,7.684,-12.132,11.391
+Raw,DiseaseGroup,Healthy obese,PC3,228,0.425,2.318,1.163,0.175,1.758,-7.508,3.739
+Raw,DiseaseGroup,MASH,PC3,79,4.02,6.479,7.164,3.116,8.373,-17.474,10.012
+Raw,DiseaseGroup,MASL,PC3,50,-0.93,7.106,-5.014,-6.391,6.931,-15.187,9.746
+Raw,DiseaseGroup,Mild fibrosis,PC3,47,-5.297,3.422,-4.952,-6.388,-4.41,-12.557,6.234
+Raw,Progression3,Advanced fibrosis,PC1,143,8.846,9.548,8.789,2.14,15.073,-11.302,31.811
+Raw,Progression3,Healthy,PC1,302,-6.603,6.991,-7.554,-10.743,-3.185,-23.698,47.761
+Raw,Progression3,Mild disease,PC1,176,4.144,14.728,0.23,-6.374,10.792,-21.835,47.894
+Raw,Progression3,Advanced fibrosis,PC2,143,5.951,8.798,8.734,2.869,11.956,-20.437,20.604
+Raw,Progression3,Healthy,PC2,302,2.221,8.575,5.457,-6.151,8.574,-18.227,17.153
+Raw,Progression3,Mild disease,PC2,176,-8.647,4.351,-9.067,-11.357,-6.696,-19.86,12.044
+Raw,Progression3,Advanced fibrosis,PC3,143,-0.584,3.762,0.115,-2.335,2.018,-14.948,5.11
+Raw,Progression3,Healthy,PC3,302,0.203,4.211,1.133,-1.086,1.932,-12.132,11.391
+Raw,Progression3,Mild disease,PC3,176,0.125,7.141,-0.374,-5.952,7.628,-17.474,10.012

@@ -1,0 +1,149 @@
+project_root: "."
+run_id: ""  # If empty, generated from outcome + covariates + CV strategy.
+
+# Input files from the main preprocessing output.
+# The filtered common-CpG matrix is the classifier default because feature
+# selection and imputation happen inside the classifier workflow.
+inputs:
+  beta_matrix_path: "../data/processed/Combined_liver/beta_all_liver_commonCpGs_filtered.rds"
+  metadata_path: "../data/processed/Combined_liver/pheno_all_liver_filtered.rds"
+  shared_cpgs_path: ""  # optional list of CpGs (one per line)
+  sample_id_col: "Sample_Name"
+
+# Outcome
+outcome:
+  active: "disease_group_4"
+  source_column: "DiseaseGroup"
+  variants:
+    disease_group_6:
+      description: "Six-class DiseaseGroup: Healthy and Healthy_Obese separate; MASL and MASH separate; fibrosis split into Mild_Fibrosis and Advanced_Fibrosis."
+      levels: ["Healthy", "Healthy_Obese", "MASL", "MASH", "Mild_Fibrosis", "Advanced_Fibrosis"]
+      mapping:
+        Healthy: ["Healthy"]
+        Healthy_Obese: ["Healthy_Obese"]
+        MASL: ["MASL"]
+        MASH: ["MASH"]
+        Mild_Fibrosis: ["Mild_Fibrosis"]
+        Advanced_Fibrosis: ["Advanced_Fibrosis"]
+    disease_group_5:
+      description: "Five-class DiseaseGroup: Healthy and Healthy_Obese separate; MASL and MASH separate; Mild_Fibrosis and Advanced_Fibrosis combined as Fibrosis."
+      levels: ["Healthy", "Healthy_Obese", "MASL", "MASH", "Fibrosis"]
+      mapping:
+        Healthy: ["Healthy"]
+        Healthy_Obese: ["Healthy_Obese"]
+        MASL: ["MASL"]
+        MASH: ["MASH"]
+        Fibrosis: ["Mild_Fibrosis", "Advanced_Fibrosis"]
+    disease_group_5_obesity_split:
+      description: "Five-class stage definition: Healthy and Healthy_Obese separate; MASL and MASH combined; fibrosis split into Mild_Fibrosis and Advanced_Fibrosis."
+      levels: ["Healthy", "Healthy_Obese", "MASL_MASH", "Mild_Fibrosis", "Advanced_Fibrosis"]
+      mapping:
+        Healthy: ["Healthy"]
+        Healthy_Obese: ["Healthy_Obese"]
+        MASL_MASH: ["MASL", "MASH"]
+        Mild_Fibrosis: ["Mild_Fibrosis"]
+        Advanced_Fibrosis: ["Advanced_Fibrosis"]
+    disease_group_4:
+      description: "Main four-class stage definition: Healthy and Healthy_Obese combined; MASL and MASH combined; fibrosis split into Mild_Fibrosis and Advanced_Fibrosis."
+      levels: ["Healthy", "MASL_MASH", "Mild_Fibrosis", "Advanced_Fibrosis"]
+      mapping:
+        Healthy: ["Healthy", "Healthy_Obese"]
+        MASL_MASH: ["MASL", "MASH"]
+        Mild_Fibrosis: ["Mild_Fibrosis"]
+        Advanced_Fibrosis: ["Advanced_Fibrosis"]
+    disease_group_4_no_healthy_obese:
+      description: "Four-class Healthy_Obese exclusion sensitivity: Healthy contains only lean/regular Healthy samples; Healthy_Obese source samples are left unmapped and removed before splitting/training."
+      levels: ["Healthy", "MASL_MASH", "Mild_Fibrosis", "Advanced_Fibrosis"]
+      mapping:
+        Healthy: ["Healthy"]
+        MASL_MASH: ["MASL", "MASH"]
+        Mild_Fibrosis: ["Mild_Fibrosis"]
+        Advanced_Fibrosis: ["Advanced_Fibrosis"]
+    disease_group_3:
+      description: "Three-class progression definition: Healthy controls, Mild disease, and Advanced fibrosis."
+      levels: ["Healthy", "Mild", "Advanced"]
+      mapping:
+        Healthy: ["Healthy", "Healthy_Obese"]
+        Mild: ["MASL", "MASH", "Mild_Fibrosis"]
+        Advanced: ["Advanced_Fibrosis"]
+    disease_group_3_no_healthy_obese:
+      description: "Three-class Healthy_Obese exclusion sensitivity: Healthy contains only lean/regular Healthy samples; Healthy_Obese source samples are left unmapped and removed before splitting/training."
+      levels: ["Healthy", "Mild", "Advanced"]
+      mapping:
+        Healthy: ["Healthy"]
+        Mild: ["MASL", "MASH", "Mild_Fibrosis"]
+        Advanced: ["Advanced_Fibrosis"]
+    binary_healthy_vs_disease:
+      description: "Binary classification: Healthy and Healthy_Obese versus all disease groups."
+      levels: ["Healthy", "Disease"]
+      mapping:
+        Healthy: ["Healthy", "Healthy_Obese"]
+        Disease: ["MASL", "MASH", "Mild_Fibrosis", "Advanced_Fibrosis"]
+    binary_healthy_vs_disease_no_healthy_obese:
+      description: "Binary Healthy_Obese exclusion sensitivity: Healthy contains only lean/regular Healthy samples; Healthy_Obese source samples are left unmapped and removed before splitting/training."
+      levels: ["Healthy", "Disease"]
+      mapping:
+        Healthy: ["Healthy"]
+        Disease: ["MASL", "MASH", "Mild_Fibrosis", "Advanced_Fibrosis"]
+
+# Covariates (column names in metadata)
+covariates:
+  study_id_col: "Dataset"
+  array_type_col: "Array"
+  age_col: "Age"
+  sex_col: "Sex"
+
+# Modeling
+modeling:
+  test_split: 0.3
+  cv_folds: 10
+  cv_strategy: "train_test"  # options: kfold | train_test | loso
+  loso_group_col: "Dataset" # column used for LOSO grouping (Study ID)
+  seed: 123
+  covariate_set: "all_covariates"  # options: cpg_only | clinical | study_array | all_covariates
+  tune_metric: "Accuracy" # options: Accuracy | Balanced_Accuracy | Macro_F1
+  include_study_covariate: true
+  include_array_covariate: true
+
+# Optional validation holdouts removed before model training/CV.
+# Activate with CLASSIFIER_HOLDOUT=johnson_nonfibrotic.
+validation_holdout:
+  active: ""
+  definitions:
+    johnson_nonfibrotic:
+      description: "Johnson samples originally marked non-fibrotic/Healthy_Obese; excluded from training and predicted as an external-like validation set."
+      dataset_col: "Dataset"
+      dataset_values: ["Johnson"]
+      source_column: "DiseaseGroup"
+      source_values: ["Healthy_Obese"]
+    johnson_all:
+      description: "All Johnson samples excluded from training and predicted as a strict external-like validation set."
+      dataset_col: "Dataset"
+      dataset_values: ["Johnson"]
+      source_column: "DiseaseGroup"
+
+# Feature selection
+feature_selection:
+  top_variable_n: 5000
+  diffmeth_adj_p: 0.05
+  diffmeth_top_n: 5000
+
+# Elastic net grid
+elastic_net:
+  alpha_grid: [0, 0.25, 0.5, 0.75, 1]
+
+# Modeling backends (toggle)
+models:
+  elastic_net: true
+  random_forest: true
+  xgboost: true
+
+# Output
+outputs:
+  data_processed: "data/processed"
+  data_intermediate: "data/intermediate"
+  results_models: "results/models"
+  results_metrics: "results/metrics"
+  results_features: "results/selected_features"
+  results_plots: "results/plots"
+  logs: "logs"
