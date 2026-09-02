@@ -50,9 +50,9 @@ GEO series are downloaded with `GEOquery`; paths are configured in
 read with `skip = 13` in `01_preprocessing_liver.R`. Sample-level table with
 the columns `Sample`, `Group`, `Etiology`, `Simple Group`, `Age`, `Sex`. It is
 not included because it contains individual-level covariates that were not
-published alongside the GEO series. Without it, the Kurokawa transfer analysis
+published alongside the GEO series but directly retrieved from the authors of the paper. Without it, the Kurokawa transfer analysis
 (`classifier/scripts/25_kurokawa_transfer_analysis.R`) cannot be reproduced;
-the rest of the pipeline is unaffected.
+the rest of the pipeline is unaffected. In case you want to reproduce this step, reach out to me privately.
 
 ## Cohort after preprocessing
 
