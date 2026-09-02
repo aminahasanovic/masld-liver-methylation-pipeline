@@ -19,13 +19,7 @@ pipeline expects them.
 Machine-readable version: [`../data/source_manifest.csv`](../data/source_manifest.csv).
 
 The ITEN cohort is hosted at the Korea BioData Station under study accession
-`KAP240571` (the identifier reported in the thesis) and may require an access
-request. Two further identifiers appear internally and are kept for
-reproducibility: the K-BDS submission identifier `KSE102917`, used in the local
-input paths and when loading the IDATs, and the first-author form used in
-directory and object names (`data/raw/Kim_KSE102917`, `pheno_kim_clean.rds`).
-The dataset label in all phenotype tables, figures and result tables is
-`ITEN`.
+`KAP240571` and may require an access request.
 
 ## Expected directory layout
 
