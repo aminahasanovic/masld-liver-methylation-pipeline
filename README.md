@@ -17,7 +17,7 @@ per sample) and used for three analyses:
    modelling and random-effects meta-analysis.
 
 The repository contains the code and the result tables reported in the thesis.
-Methylation matrices are not redistributed here — all source datasets are
+Methylation matrices are not redistributed here, all source datasets are
 public and listed in [`data/source_manifest.csv`](data/source_manifest.csv).
 
 ## Repository layout
@@ -50,10 +50,10 @@ bash workflow/run_pipeline.sh core
 `core` runs preprocessing, PCA, epigenetic age, and the primary four-class
 Elastic Net under both validation schemes. `full` additionally runs the
 Healthy-obese exclusion sensitivity analysis. Individual analyses can be run
-script by script; see [`docs/PIPELINE.md`](docs/PIPELINE.md).
+script by script, see [`docs/PIPELINE.md`](docs/PIPELINE.md).
 
 Preprocessing is the expensive step (large beta matrices, KNN imputation,
-ComBat) and needs a machine with substantial memory; the classifier scripts
+ComBat) and needs a machine with substantial memory, the classifier scripts
 run on a laptop once the matrices exist.
 
 ## Main findings
