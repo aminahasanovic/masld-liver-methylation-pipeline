@@ -71,7 +71,7 @@ signal can be separated from study background.
 Six of the seven processed datasets come from GEO; the ITEN cohort
 (K-BDS, `KAP240571`) may require an access request. The Kurokawa
 transfer analysis additionally needs a sample-level age/sex table that is not
-redistributed here — see [`docs/DATA.md`](docs/DATA.md).
+redistributed here, see [`docs/DATA.md`](docs/DATA.md).
 
 ## License
 
