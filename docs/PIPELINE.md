@@ -1,7 +1,7 @@
 # Pipeline
 
 Two stages. The preprocessing/EAA stage runs from the repository root and
-writes to `data/processed/` and `outputs/`; the classifier stage runs from
+writes to `data/processed/` and `outputs/`. The classifier stage runs from
 `classifier/` and writes to `classifier/results/`.
 
 `workflow/run_pipeline.sh core` runs preprocessing, PCA, epigenetic age, and
@@ -45,7 +45,7 @@ not use.
 `epigenetic_age/01_epi_age_calculation.R` estimates the clocks via
 `methylCIPHER` and `CTSclocks`, computes EAA as the residual of clock age on
 chronological age, and fits group models adjusted for sex and dataset with BH
-correction applied within each result family. Twelve clocks are reported —
+correction applied within each result family. Twelve clocks are reported:
 Hannum, Horvath1, Horvath2, PhenoAge, GrimAgeV1, their principal-component
 versions (PCHannum, PCHorvath1, PCHorvath2, PCPhenoAge, PCGrimAge) and the two
 liver-specific clocks HepClock and LiverClock. The models run on the 565
@@ -120,8 +120,8 @@ no sparse selection information, and it writes to separate
 never overwritten. The LOSO runs entering the aggregation are listed in it
 under `stability_selection.eligible_run_ids`.
 
-The whole chain — the eligible LOSO runs, the aggregation, and the candidate
-figures and tables — is run by
+The whole chain with the eligible LOSO runs, the aggregation, and the candidate
+figures and tables is run by
 
 ```bash
 bash scripts/run_sparse_stability_candidate_chain.sh
@@ -131,13 +131,13 @@ which reads the eligible run ids from the configuration and stops at the
 manual curation step described below. `workflow/run_pipeline.sh full` calls it.
 The individual steps, in order:
 
-1. `09_annotate_elastic_net_cpgs.R` — aggregate stability across the eligible LOSO runs and annotate the selected CpGs (Illumina 450K/EPIC manifests)
-2. `10_plot_candidate_cpgs.R` — stability across LOSO folds, priority table
-3. `11_meta_analyze_candidate_cpgs.R` — per-study effects and random-effects meta-analysis
-4. `12_build_candidate_cpg_plots.R` — forest and effect plots
-5. `13a_prepare_top30_biological_curation.R` — curation sheet for the top-30 literature review
-6. `13_add_biological_context_top_cpgs.R` — gene and regulatory context for the top candidates
-7. `28_build_final_candidate_thesis_outputs.R` — final candidate figures and tables
+1. `09_annotate_elastic_net_cpgs.R`: aggregate stability across the eligible LOSO runs and annotate the selected CpGs (Illumina 450K/EPIC manifests)
+2. `10_plot_candidate_cpgs.R`: stability across LOSO folds, priority table
+3. `11_meta_analyze_candidate_cpgs.R`: per-study effects and random-effects meta-analysis
+4. `12_build_candidate_cpg_plots.R`: forest and effect plots
+5. `13a_prepare_top30_biological_curation.R`: curation sheet for the top-30 literature review
+6. `13_add_biological_context_top_cpgs.R`: gene and regulatory context for the top candidates
+7. `28_build_final_candidate_thesis_outputs.R`: final candidate figures and tables
 
 Each script stops with an explicit message if its input from the previous step
 is missing.
