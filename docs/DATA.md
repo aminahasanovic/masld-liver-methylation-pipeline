@@ -1,7 +1,7 @@
 # Data
 
 No methylation data is stored in this repository. All datasets used in the
-thesis are public; this file describes where they come from and where the
+thesis are public. This file describes where they come from and where the
 pipeline expects them.
 
 ## Source datasets
@@ -46,20 +46,20 @@ GEO series are downloaded with `GEOquery`; paths are configured in
 
 ## Files not redistributed here
 
-**Kurokawa age and sex table** — `data/metadata/S_table1_27_12_2024.xlsx`,
+**Kurokawa age and sex table**: `data/metadata/S_table1_27_12_2024.xlsx`,
 read with `skip = 13` in `01_preprocessing_liver.R`. Sample-level table with
 the columns `Sample`, `Group`, `Etiology`, `Simple Group`, `Age`, `Sex`. It is
 not included because it contains individual-level covariates that were not
 published alongside the GEO series but directly retrieved from the authors of the paper. Without it, the Kurokawa transfer analysis
-(`classifier/scripts/25_kurokawa_transfer_analysis.R`) cannot be reproduced;
-the rest of the pipeline is unaffected. In case you want to reproduce this step, reach out to me privately.
+(`classifier/scripts/25_kurokawa_transfer_analysis.R`) cannot be reproduced.
+The rest of the pipeline is unaffected. In case you want to reproduce this step, reach out to me privately.
 
 ## Cohort after preprocessing
 
 621 samples and 377,857 shared CpGs. Sample-level counts per study, disease
 group, array and metadata completeness are in
 [`../thesis_results/tables/T00_study_overview_final_cohort.csv`](../thesis_results/tables/T00_study_overview_final_cohort.csv)
-and `T00E_thesis_dataset_overview.csv`; the exclusion steps from 650
+and `T00E_thesis_dataset_overview.csv`. The exclusion steps from 650
 harmonised profiles to the final 621 samples are in
 `../thesis_results/supplementary/tables/T25_sample_exclusion_flow_650_to_621.csv`.
 
