@@ -90,10 +90,6 @@ The random-effects meta-analysis in
 `classifier/scripts/11_meta_analyze_candidate_cpgs.R` is implemented directly
 (DerSimonian–Laird estimator of τ²), so no meta-analysis package is required.
 
-The random-effects meta-analysis in
-`classifier/scripts/11_meta_analyze_candidate_cpgs.R` is implemented directly
-(DerSimonian–Laird estimator of τ²), so no meta-analysis package is required.
-
 A machine-readable version including the exact runtime state is in
 [`../thesis_results/supplementary/tables/T34_software_versions_runtime.csv`](../thesis_results/supplementary/tables/T34_software_versions_runtime.csv).
 
@@ -105,8 +101,8 @@ All packages above are installed by
 Rscript workflow/install_dependencies.R
 ```
 
-which installs whatever is missing from the current library — CRAN and
-Bioconductor packages by name, the four clock packages from GitHub — and then
+which installs whatever is missing from the current library, CRAN and
+Bioconductor packages by name, the four clock packages from GitHub and then
 prints the resulting versions so a fresh environment can be compared against
 the table above. It exits with an error if any package is still missing.
 
@@ -119,5 +115,5 @@ script to the commits used for the thesis results:
 | CTSclocks | `HGT-UwU/CTSclocks` | `7c242cf` |
 
 `methylCIPHER` needs the PC-clock reference object, which is distributed
-separately by the package authors and is several hundred megabytes; it is not
+separately by the package authors and is several hundred megabytes. It is not
 included in this repository.
