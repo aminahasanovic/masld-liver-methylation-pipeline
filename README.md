@@ -10,9 +10,9 @@ cohort of **621 samples and 377,857 shared CpGs** (450K and EPIC arrays,
 per sample) and used for three analyses:
 
 1. epigenetic age acceleration (EAA) across disease stages, using established
-   methylation clocks;
+   methylation clocks
 2. supervised CpG-based classifiers of histological disease stage, validated
-   both by random train/test splits and leave-one-study-out (LOSO);
+   both by random train/test splits and leave-one-study-out (LOSO)
 3. candidate CpGs associated with disease severity, with cross-study effect
    modelling and random-effects meta-analysis.
 
